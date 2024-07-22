@@ -1,26 +1,22 @@
 [
   {
-    "tag_name": "rock music"
+    "id": 1,
+    "tag_name": "New Arrival"
   },
   {
-    "tag_name": "pop music"
+    "id": 2,
+    "tag_name": "Sale"
   },
   {
-    "tag_name": "blue"
+    "id": 3,
+    "tag_name": "Popular"
   },
   {
-    "tag_name": "red"
+    "id": 4,
+    "tag_name": "Limited Edition"
   },
   {
-    "tag_name": "green"
-  },
-  {
-    "tag_name": "white"
-  },
-  {
-    "tag_name": "gold"
-  },
-  {
-    "tag_name": "pop culture"
+    "id": 5,
+    "tag_name": "Discount"
   }
 ]
