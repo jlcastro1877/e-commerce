@@ -24,7 +24,7 @@
 
 ### \* [Video](#Video)
 
-### \* [Acceptance Criteria ](#Acceptance Criteria)
+### \* [Contributors](#Ucontributions)
 
 ## GitHub username:
 
