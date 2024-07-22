@@ -1,22 +1,17 @@
 [
   {
-    "id": 1,
-    "tag_name": "New Arrival"
+    "tag_name": "Shirts"
   },
   {
-    "id": 2,
-    "tag_name": "Sale"
+    "tag_name": "Shorts"
   },
   {
-    "id": 3,
-    "tag_name": "Popular"
+    "tag_name": "Music"
   },
   {
-    "id": 4,
-    "tag_name": "Limited Edition"
+    "tag_name": "Hats"
   },
   {
-    "id": 5,
-    "tag_name": "Discount"
+    "tag_name": "Shoes"
   }
 ]

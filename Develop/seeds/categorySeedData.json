@@ -1,22 +1,17 @@
 [
   {
-    "id": 1,
-    "category_name": "Electronics"
+    "category_name": "Shirts"
   },
   {
-    "id": 2,
-    "category_name": "Home Appliances"
+    "category_name": "Shorts"
   },
   {
-    "id": 3,
-    "category_name": "Books"
+    "category_name": "Music"
   },
   {
-    "id": 4,
-    "category_name": "Clothing"
+    "category_name": "Hats"
   },
   {
-    "id": 5,
-    "category_name": "Sports & Outdoors"
+    "category_name": "Shoes"
   }
 ]

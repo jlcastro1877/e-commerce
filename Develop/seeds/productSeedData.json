@@ -1,41 +1,35 @@
 [
   {
-    "id": 1,
-    "product_name": "Smartphone",
+    "product_name": "Plain T-Shirt",
     "price": 699.99,
     "stock": 15,
     "category_id": 1
   },
   {
-    "id": 2,
-    "product_name": "Washing Machine",
+    "product_name": "Running Sneakers",
     "price": 499.99,
     "stock": 10,
     "category_id": 2
   },
   {
-    "id": 3,
-    "product_name": "Laptop",
+    "product_name": "Branded Baseball Hat",
     "price": 1099.99,
     "stock": 5,
     "category_id": 1
   },
   {
-    "id": 4,
-    "product_name": "The Great Gatsby",
+    "product_name": "Top 40 Music Compilation Vinyl Record",
     "price": 15.99,
     "stock": 25,
     "category_id": 3
   },
   {
-    "id": 5,
-    "product_name": "Running Shoes",
+    "product_name": "Cargo Shorts",
     "price": 89.99,
     "stock": 20,
     "category_id": 5
   },
   {
-    "id": 6,
     "product_name": "Winter Jacket",
     "price": 129.99,
     "stock": 12,

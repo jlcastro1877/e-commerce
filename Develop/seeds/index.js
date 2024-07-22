@@ -1,25 +1,36 @@
 const sequelize = require("../../Main/config/connection");
-const seedCategories = require("./categorySeedData.json");
-const seedProducts = require("./productSeedData.json");
-const seedTags = require("./tagSeedData.json");
-const seedProductTags = require("./productTagSeedData.json");
+const { Category, Product, Tag, ProductTag } = require("../../Main/models"); // Adjust the path to your models
+
+// Import seed data
+const seedData = {
+  Category: require("./categorySeedData.json"),
+  Product: require("./productSeedData.json"),
+  Tag: require("./tagSeedData.json"),
+  ProductTag: require("./productTagSeedData.json"),
+};
+
+// Define a function to seed each model
+const seedModel = async (modelName, data) => {
+  try {
+    await modelName.bulkCreate(data, { individualHooks: true });
+    console.log(`\n----- ${modelName.name.toUpperCase()} SEEDED -----\n`);
+  } catch (error) {
+    console.error(`Error seeding ${modelName.name}:`, error);
+  }
+};
 
 const seedAll = async () => {
   try {
+    // Sync the database
     await sequelize.sync({ force: true });
     console.log("\n----- DATABASE SYNCED -----\n");
 
-    await seedCategories();
-    console.log("\n----- CATEGORIES SEEDED -----\n");
+    // Seed each model
+    for (const [modelName, data] of Object.entries(seedData)) {
+      await seedModel(eval(modelName), data); // Use eval to get the model class by name
+    }
 
-    await seedProducts();
-    console.log("\n----- PRODUCTS SEEDED -----\n");
-
-    await seedTags();
-    console.log("\n----- TAGS SEEDED -----\n");
-
-    await seedProductTags();
-    console.log("\n----- PRODUCT TAGS SEEDED -----\n");
+    console.log("\n----- SEEDING COMPLETED -----\n");
   } catch (error) {
     console.error("Error seeding data:", error);
   } finally {
