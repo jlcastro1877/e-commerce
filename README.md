@@ -43,6 +43,9 @@
 ### You must install the following for this app to function:
 
 ### npm install
+### pg
+### Node
+### dotenv
 
 ## Tests:
 
